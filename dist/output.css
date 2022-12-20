@@ -636,8 +636,16 @@ video {
   display: block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .hidden {
@@ -682,6 +690,10 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.basis-auto {
+  flex-basis: auto;
 }
 
 .flex-col {
@@ -870,9 +882,9 @@ video {
   padding-right: 2.5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .px-3 {
@@ -885,19 +897,9 @@ video {
   padding-right: 1.5rem;
 }
 
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
 }
 
 .pt-6 {
@@ -995,7 +997,7 @@ video {
 }
 
 .ficon:hover {
-  filter: invert(79%) sepia(61%) saturate(464%) hue-rotate(130deg) brightness(89%) contrast(85%);
+  filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg) brightness(101%) contrast(94%);
 }
 
 /* Hamburger Menu */
@@ -1048,11 +1050,6 @@ video {
 .hover\:bg-cyanLight:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(180 66% 69% / var(--tw-bg-opacity));
-}
-
-.hover\:bg-cyan:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(180 66% 49% / var(--tw-bg-opacity));
 }
 
 .hover\:text-veryDarkViolet:hover {
@@ -1133,6 +1130,12 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(5rem * var(--tw-space-x-reverse));
     margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-24 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(6rem * var(--tw-space-x-reverse));
+    margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:py-2 {
